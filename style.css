@@ -90,6 +90,7 @@ header nav .centre-element h1{
     line-height: 6.5vw;
     font-weight: 250;
     position: relative;
+    transform :rotate(10deg);
 }
 .main .main-heading :nth-child(1)::after{
     width: 200px;
