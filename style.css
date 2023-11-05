@@ -1,0 +1,144 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(252, 241, 226);
+}
+
+#mouse-follower{
+    height: 10vh;
+    width: 10vh;
+    background-color: rgb(20, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transition: all .12s ease;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 2vh 2.5vw;
+}
+header{
+    height: 6vh;
+    width: 100%;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav .left-element{
+    width: 6vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .left-element h5, .right-element h5{
+    position: relative;
+    cursor: pointer;
+    font-weight: 100;
+
+}
+header nav .left-element :nth-child(1):after{
+    content: "";
+    position: absolute;
+    width: 1.3vw;
+    top: 2.3vh;
+    left: 0;
+    border-bottom: 2px solid white;
+}
+header nav .centre-element h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+}
+.main .main-heading{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main-heading h1{
+    font-family: 'Times New Roman';
+    font-size: 6.5vw;
+    line-height: 6.5vw;
+    font-weight: 250;
+    position: relative;
+}
+.main .main-heading :nth-child(1)::after{
+    width: 200px;
+    font-size: 1.9vh;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    position: absolute;
+    /* top: 0%; */
+    line-height: 2.4vh;
+    content: "Rishabh Pandey is Bhartian designer is passionate about designing intuitive experiences that augment human abilities and help businesses succeed";
+}
+.main .main-heading :nth-child(3)::before{
+    font-size: 1.9vh;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    position: relative;
+    top: -58%;
+    left: -7%;
+    line-height: 2.4vh;
+    content: "Infused by my Bhartian heritage";
+}
+.main .main-heading :nth-child(4)::after{
+    position: relative;
+    top: -50%;
+    content: " ____";
+}
+
+.main .main-sub-heading{
+    width: 100%;
+    height: 15vh;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.main .main-sub-heading .left{
+    font-size: 7vh;
+    width: 15vw;
+    height: 100%;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+.main .main-sub-heading .left p{
+    font-family: 'Times New Roman';
+    font-size: 7vh;
+    width: 12vh;
+    line-height: 7vh;
+}
+.main .main-sub-heading .center p, .main .main-sub-heading .right p{
+    font-size: 2vh;
+    font-weight: 200;
+}
