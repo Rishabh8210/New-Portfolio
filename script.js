@@ -34,10 +34,14 @@ locoMotive()
 const mousemover = document.getElementById("mouse-follower");
 const main = document.querySelector(".main");
 main.addEventListener("mousemove", (dets)=>{
-    console.log(dets);
+    // console.log(dets);
     mousemover.style.top = dets.y-40+"px";
     mousemover.style.scale = "1";
     mousemover.style.left = dets.x-40 +"px";
+})
+main.addEventListener("mouseout", (dets)=>{
+  // console.log(dets);
+  mousemover.style.scale = 0
 })
 
 document.querySelector("header").addEventListener("mousemove", (dets)=>{
@@ -57,31 +61,44 @@ document.querySelector("header").addEventListener("mouseout", (dets)=>{
     mousemover.style.backgroundColor = "rgb(20, 18, 18)";
 })
 
-gsap.to(".main-heading",{
+const t = gsap.timeline();
+
+t.fromTo(".centre-element",{
+  y:-50,
+  opacity :0,
+  delay:.5,
+  duration:.9
+}, {
+  y:0,
+  opacity:1,
+  duration:1.2
+})
+
+t.fromTo(".left-element, .right-element",{
+  y:-50,
+  opacity :0,
+  delay:.5,
+  duration:.9
+}, {
+  y:0,
+  opacity:1,
+  duration:1.2
+}, 'pandey')
+t.to(".main-sub-heading", {
+  y:-30,
+  delay:.4,
+  duration:.9,
+  opacity:1
+}, 'pandey')
+t.to(".main-heading h1",{
+  fontStyle:"normal",
+  delay: .144,
+  duration:1
+},'rish')
+t.to(".main-heading",{
     y : -60, 
     filter:"blur(0rem)",
     // fontStyle:"normal",
     opacity:1,
-    duration: 1.3,
+    duration: 1,
 }, 'rish')
-
-gsap.to(".main-heading h1",{
-  fontStyle:"normal",
-  delay: .3,
-  duration:1
-},'rish')
-
-
-gsap.to(".main-sub-heading", {
-  y:-20,
-  duration:1.3,
-  opacity:1
-}, 'rish')
-
-
-// gsap.to(".main-heading h1",{
-//     y:0,
-//     duration:1,
-//     transform :"rotate(0deg)",
-//     stagger:.01,
-// }, 'rish')
