@@ -98,7 +98,6 @@ t.to(".main-heading h1",{
 t.to(".main-heading",{
     y : -60, 
     filter:"blur(0rem)",
-    // fontStyle:"normal",
     opacity:1,
     duration: 1,
 }, 'rish')
