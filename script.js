@@ -58,12 +58,30 @@ document.querySelector("header").addEventListener("mouseout", (dets)=>{
 })
 
 gsap.to(".main-heading",{
-    y : 0, 
-})
+    y : -60, 
+    filter:"blur(0rem)",
+    // fontStyle:"normal",
+    opacity:1,
+    duration: 1.3,
+}, 'rish')
 
 gsap.to(".main-heading h1",{
-    transform :"rotate(0deg)",
-    stagger:.3,
-})
+  fontStyle:"normal",
+  delay: .3,
+  duration:2
+},'rish')
 
 
+gsap.to(".main-sub-heading", {
+  y:-20,
+  duration:1.3,
+  opacity:1
+}, 'rish')
+
+
+// gsap.to(".main-heading h1",{
+//     y:0,
+//     duration:1,
+//     transform :"rotate(0deg)",
+//     stagger:.01,
+// }, 'rish')

@@ -25,7 +25,7 @@ html, body{
     border-radius: 50%;
     pointer-events: none;
     mix-blend-mode: exclusion;
-    
+    z-index: 99;
 }
 .container{
     width: 100%;
@@ -83,6 +83,10 @@ header nav .centre-element h1{
     width: 100%;
     flex-direction: column;
     align-items: center;
+    height: max-content;
+    filter: blur(1rem);
+    background-color: black;
+    opacity: 0;
 }
 .main .main-heading h1{
     font-family: 'Times New Roman';
@@ -90,7 +94,9 @@ header nav .centre-element h1{
     line-height: 6.5vw;
     font-weight: 250;
     position: relative;
-    transform :rotate(10deg);
+    transform-origin: 0;
+    font-style: italic;
+    /* transform :rotate(10deg); */
 }
 .main .main-heading :nth-child(1)::after{
     width: 200px;
@@ -125,6 +131,7 @@ header nav .centre-element h1{
     display: flex;
     justify-content: space-between;
     align-items: end;
+    opacity: 0;
 }
 .main .main-sub-heading .left{
     font-size: 7vh;
