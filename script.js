@@ -68,7 +68,7 @@ gsap.to(".main-heading",{
 gsap.to(".main-heading h1",{
   fontStyle:"normal",
   delay: .3,
-  duration:2
+  duration:1
 },'rish')
 
 
