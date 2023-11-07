@@ -101,3 +101,54 @@ t.to(".main-heading",{
     opacity:1,
     duration: 1,
 }, 'rish')
+
+const imgHover = document.querySelector(".right-side");
+imgHover.addEventListener("mousemove", ()=>{
+    gsap.to(".img1,.img2",{
+      y:"-100%",
+      duration:1,
+    })
+})
+imgHover.addEventListener("mouseout", ()=>{
+  gsap.to(".img1,.img2",{
+    y:"0%",
+    duration:1
+  })
+})
+
+gsap.to(".main-sub-heading",{
+    y:60,
+    scrollTrigger:{
+      trigger:".main-sub-heading",
+      // markers:true,
+      scroller:"body",
+      start:"top 70%",
+      end:"top 40%",
+      scrub:3,
+    }
+})
+
+// gsap.to(".main-heading",{
+//   y:40,
+//   scrollTrigger:{
+//     trigger:".main-sub-heading",
+//     markers:true,
+//     scroller:"body",
+//     start:"top 30%",
+//     end:"top 10%",
+//     scrub:3,
+//   }
+// })
+
+
+gsap.to(".main",{
+  opacity:0,
+  scrollTrigger:{
+    trigger:".page1",
+    // markers:true,
+    scroller:"body",
+    start:"top 70%",
+    end:"top 50%",
+    scrub:3,
+  }
+})
