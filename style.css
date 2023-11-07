@@ -54,7 +54,7 @@ header nav .left-element h5, .right-element h5{
     position: relative;
     cursor: pointer;
     font-weight: 100;
-
+    transition: all .2s linear;
 }
 header nav .left-element :nth-child(1):after{
     content: "";
@@ -63,6 +63,25 @@ header nav .left-element :nth-child(1):after{
     top: 2.3vh;
     left: 0;
     border-bottom: 2px solid white;
+}
+@keyframes anim{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 3vw;
+    }
+}
+
+header nav .left-element :nth-child(2):hover:after{
+    content: "";
+    position: absolute;
+    width: 3vw;
+    top: 2.3vh;
+    left: 0;
+    border-bottom: 2px solid white;
+    animation: anim .2s forwards ease-in-out;
+    
 }
 header nav .centre-element h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
