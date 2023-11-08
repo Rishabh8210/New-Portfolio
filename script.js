@@ -105,14 +105,18 @@ t.to(".main-heading",{
 const imgHover = document.querySelector(".right-side");
 imgHover.addEventListener("mousemove", ()=>{
     gsap.to(".img1,.img2",{
-      y:"-100%",
-      duration:1,
+      transform:"translateY(-100%)",
+      // y:"-100%",
+      opacity:0.5,
+      duration:1.5,
     })
 })
 imgHover.addEventListener("mouseout", ()=>{
   gsap.to(".img1,.img2",{
-    y:"0%",
-    duration:1
+    transform:"translateY(0%)",
+      // y:"-100%",
+      opacity:0.5,
+    duration:1.5
   })
 })
 
@@ -151,4 +155,33 @@ gsap.to(".main",{
     end:"top 50%",
     scrub:3,
   }
+})
+
+
+gsap.to(".caption h3",{
+  // duration:2,
+  transform:"translateX(-550%)",
+  scrollTrigger:{
+    trigger:".caption",
+    scroller:"body",
+    pin:true,
+    // markers:true,
+    start:"top 0%",
+    end:"top -350%",
+    scrub:2
+  }
+})
+
+gsap.to(".page1", {
+    y : -70,
+    duration:1.5,
+    opacity:1,
+    scrollTrigger:{
+       trigger:".main-sub-heading",
+       scroller:"body",
+      //  markers:true,
+       start:"bottom 30%",
+       end:"bottom 5%",
+       scrub:2
+    }
 })
