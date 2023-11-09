@@ -160,7 +160,8 @@ gsap.to(".main",{
 
 gsap.to(".caption h3",{
   // duration:2,
-  transform:"translateX(-550%)",
+  fontWeight:100,
+  transform:"translateX(-500%)",
   scrollTrigger:{
     trigger:".caption",
     scroller:"body",
