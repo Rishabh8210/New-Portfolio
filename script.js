@@ -158,20 +158,46 @@ gsap.to(".main",{
 })
 
 
-gsap.to(".caption h3",{
-  // duration:2,
-  fontWeight:100,
-  transform:"translateX(-500%)",
-  scrollTrigger:{
-    trigger:".caption",
-    scroller:".container",
-    pin:true,
-    // markers:true,
-    start:"top 0%",
-    end:"top -350%",
-    scrub:2
-  }
+// gsap.to(".caption h3",{
+//   // duration:2,
+//   fontWeight:100,
+//   transform:"translateX(-500%)",
+//   scrollTrigger:{
+//     trigger:".caption",
+//     scroller:".container",
+//     pin:true,
+//     // markers:true,
+//     start:"top 0%",
+//     end:"top -350%",
+//     scrub:2
+//   }
+// })
+
+
+const a = gsap.timeline({
+    scrollTrigger:{
+      trigger:".multiple-pages",
+      scroller:".container",
+      pin:true,
+      // markers:true,
+      start:"top 0%",
+      end:"top -350%",
+      scrub:2
+    }
+});
+// a.to(".check",{
+//   transform:"translateX(-200%)",
+// })
+
+a.to(".check",{
+  duration:2,
+  transform:"translateX(-200%)",
 })
+a.to(".circle",{
+    height:"100vh",
+    width:"100%",
+    borderRadius:"0%",
+  })
 
 gsap.to(".page1", {
     y : -70,
