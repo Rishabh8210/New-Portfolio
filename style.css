@@ -288,16 +288,12 @@ header nav .centre-element h1{
     min-height: 100vh;
     /* background-color: red; */
     width: 100%;
-
+    opacity: 0;
     overflow: hidden;
     /* font-stretch: extra-condensed; */
 }
-.caption h3{
-    font-size: 18vw;
-    line-height: 30vh;
-    white-space:nowrap;
-    /* transform: translateX(-100%); */
-    text-transform: uppercase;
+.caption p{
+    font-size: 1vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -319,32 +315,87 @@ header nav .centre-element h1{
     /* background-color: blueviolet; */
 }
 .check-1{
+    /* height: 100%;
+    width: 100%; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
+}
+.Experties-1{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(71, 71, 47); */
+    display: flex;
+    flex-direction: column;
+    padding-top: 14vh;
+
+    /* justify-content: center; */
+}
+.check .left-box{
+    width: 30%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.Experties-1 .Experties-heading{
+    height: 9vh;
+    /* width: max-content; */
+    display: flex;
+    gap: 5vw;
+    /* background-color: cadetblue; */
+}
+.Experties-1 .Experties-heading h1{
+    font-size: 8vh;
+    font-weight: 300;
+    /* line-height: 4vw; */
+}
+.Experties-desc{
+    margin-top: 9vh;
+    height: 70%;
+    /* width: 50%; */
+    /* background-color: violet; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+.Experties-desc .desc{
+    height: 50%;
+    width: 50%;
+    /* background-color: teal; */
+    /* line-height: 0; */
+}
+.Experties-desc .desc .heading h3{
+    font-size: 1.6vw;
+    line-height: 1.6;
+}
+.Experties-desc .desc .sub-heading{
+    margin-top: 2vh;
+}
+.Experties-desc .desc .sub-heading p{
+    font-size: 1vw;
+    font-weight: 400;
 }
 .check-2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(238, 255, 0);
+    /* background-color: rgb(238, 255, 0); */
 }
 .check-3{
-    background-color: rgb(0, 149, 255);
+    /* background-color: rgb(0, 149, 255); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .check-3 .circle{
-    height: 30vh;
-    width: 14vw;
+    height: 13vh;
+    width: 6vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fffefe;
-    /* opacity: 0; */
 }
 .check h1{
     font-size: 40px;
