@@ -374,7 +374,7 @@ header nav .centre-element h1{
 }
 .Experties-desc .desc .sub-heading p{
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 200;
 }
 .check-2{
     display: flex;
@@ -406,4 +406,87 @@ header nav .centre-element h1{
     opacity: 0;
     color: black;
     font-size: 84px;
+}
+
+.marquee-style{
+    display: flex;
+    height: 20vh;
+    /* width: 100%; */
+    /* word-wrap: none; */
+    /* background-color: tomato; */
+    align-items: center;
+    overflow: hidden;
+    gap:1vw
+}
+.marquee-style h1{
+    font-size: 5.5vw;
+    white-space: nowrap;
+    animation: scroll-left 50s infinite forwards;
+}
+
+@keyframes scroll-left{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-450%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+footer{
+    height: 70vh;
+    width: 100%;
+    /* background-color: thistle; */
+    display: flex;
+    padding-top: 8vh;
+    justify-content: space-around;
+}
+footer .left{
+    height: 100%;
+    width: 25%;
+}
+footer .left h1{
+    font-size: 7.4vh;
+    /* letter-spacing: .1vh; */
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer .right{
+    height: 100%;
+    width: 35%;
+}
+footer .right .top{
+    height: 50%;
+    width: 100%;
+}
+footer .right .bottom{
+    height: 30%;
+    width: 100%;    
+}
+footer .right .bottom .bottom-table{
+    margin-bottom: 3vh;
+}
+footer .right .bottom .bottom-table{
+    display: flex;
+    /* justify-content: ; */
+}
+footer .right .bottom .bottom-table-data{
+    display: flex;
+    width: 30%;
+    height: 70%;
+    flex-direction: column;
+    gap: .7vh;
+}
+.bottom-contact-me-social{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    gap: 5vh;
+}
+.bottom-contact-me-social img{
+    width: 2.5vw;
+    height: 5.3vh;
+    cursor: pointer;
 }

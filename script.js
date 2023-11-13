@@ -174,7 +174,7 @@ gsap.to(".caption",{
     scroller:".container",
     start:"bottom 50%",
     end:"bottom 30%",
-    scrub:3,
+    scrub:2,
   }
 })
 
