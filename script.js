@@ -223,13 +223,17 @@ gsap.to(".page1", {
     }
 })
 
+arr = ["url(/Images/Character2.jpg)", "url(/Images/Character2.png)", "url(/Images/Character.jpg)", "url(/Images/Character.png)"]
 const projectList = document.querySelectorAll(".project-list");
 const rectangle = document.querySelector(".rectangle");
 projectList.forEach(function(elem, i){
   elem.addEventListener("mousemove", function(dets){
-    rectangle.style.left = dets.x-200 +"px";
-    rectangle.style.top = dets.y-120 +"px";
+    rectangle.style.left = dets.layerX-170 +"px";
+    rectangle.style.top = dets.layerY-40 +"px";
     rectangle.style.opacity = 1;
+    rectangle.style.backgroundImage = arr[i];
+
+    console.log(arr[i], i)
   })
   elem.addEventListener("mouseout", function(){
     rectangle.style.opacity = 0;
