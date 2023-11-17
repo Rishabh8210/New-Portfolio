@@ -18,7 +18,6 @@ html, body{
     justify-content: center;
     align-items: center;
     position: fixed;
-    transition: all .12s ease;
     border-radius: 50%;
     mix-blend-mode: exclusion;
     z-index: 99;
@@ -489,4 +488,68 @@ footer .right .bottom .bottom-table-data{
     width: 2.5vw;
     height: 5.3vh;
     cursor: pointer;
+}
+.projects{
+    /* background-color: tomato; */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title-corner{
+    height: 5vh;
+    width: 100%;
+    /* background-color: violet; */
+}
+.title-corner p{
+    font-size: 2vh;
+    font-weight: 200;
+}
+.project-desc{
+    margin-top: 12vh;
+    /* background-color: yellowgreen; */
+    padding: 0vh 12vw;
+    overflow: hidden;
+}
+.project-title{
+    width: 100%;
+    /* background-color: turquoise; */
+    height: 8vh;
+    margin-bottom: 8vh;
+}
+.project-title h1{
+    font-size: 3vw;
+}
+.all-projects-list{
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    /* position: relative; */
+}
+.rectangle{
+    height: 45vh;
+    width: 45vh;
+    /* background: url(/Images/Character.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    opacity: 0;
+    /* z-index: 10; */
+    pointer-events: none;
+    transition: all .12s linear;
+}
+.project-list{
+    height: 13vh;
+    width: 100%;
+    /* background-color: slategrey; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fffefe6a;
+    transition: all 0.3s ease-in-out;
+    
+}
+.project-list:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #fffefe;
+    gap: 1.5vw;
 }
