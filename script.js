@@ -222,3 +222,16 @@ gsap.to(".page1", {
        scrub:2
     }
 })
+
+const projectList = document.querySelectorAll(".project-list");
+const rectangle = document.querySelector(".rectangle");
+projectList.forEach(function(elem, i){
+  elem.addEventListener("mousemove", function(dets){
+    rectangle.style.left = dets.x-200 +"px";
+    rectangle.style.top = dets.y-120 +"px";
+    rectangle.style.opacity = 1;
+  })
+  elem.addEventListener("mouseout", function(){
+    rectangle.style.opacity = 0;
+  })
+})
